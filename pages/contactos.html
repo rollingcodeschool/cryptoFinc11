@@ -65,40 +65,51 @@
           <article class="col-12 col-md-6 mb-3">
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
+                <label for="nombre" class="form-label">Nombre y apellido *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Juan Perez"
+                  minlength="3"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  id="email"
+                  placeholder="juanperez@mail.com"
+                  required
                 />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
+                <label for="telefono" class="form-label">Telefono</label>
                 <input
-                  type="password"
+                  type="tel"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="telefono"
+                  placeholder="juanperez@mail.com"
                 />
               </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
+              <div class="mb-3">
+                <label for="contacto" class="form-label"
+                  >Ingrese su consulta *</label
                 >
+                <textarea
+                  class="form-control"
+                  id="contacto"
+                  rows="3"
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="form-text">
+                <p>Los campos con (*) son obligatorios</p>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
             </form>
           </article>
           <article class="col-12 col-md-6 mb-3">
